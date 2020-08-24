@@ -4,6 +4,6 @@ def prime?(n)
   elsif n == 2
     return true
   else
-    (2..n/2).none? { |i| n % i == 0}
+    (2..Math.sqrt(num)).none? { |i| (num % i).zero? }
   end
 end
